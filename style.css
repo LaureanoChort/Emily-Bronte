@@ -143,7 +143,7 @@
 }
 
 .slide-text h3 {
-	font-size: 3em;
+	font-size: 3rem;
 	font-weight: 400;
 	letter-spacing: 4px;
 	text-transform: uppercase;
@@ -235,7 +235,7 @@
 
 .content .left, .content .right {
 	width: 50%;
-	height: 80vh;
+	height: 500px;
 }
 
 .content .left {
@@ -387,7 +387,7 @@
 
 .certif-content {
 	width: 100%;
-	height: 60vh;
+	height: 420px;
 	display: flex;
 }
 
@@ -460,7 +460,7 @@
 
 .numbers {
 	width: 100%;
-	height: 60vh;
+	height: 400px;
 	position: relative;
 
 }
@@ -530,7 +530,7 @@
 
 .contact {
 	width: 100%;
-	height: 90vh;
+	height: 750px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -550,7 +550,7 @@
 }
 
 .contact-info {
-	height: 80vh;
+	height: 550px;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -597,7 +597,6 @@
 .contact-info form input[type=text] {
 	width: 49.5%;
 	margin-bottom: 2rem;
-
 }
 
 .contact-info form input[type=email] {
@@ -631,7 +630,7 @@
 
 footer {
 	width: 100%;
-	height: 30vh;
+	height: 220px;
 	background: #131313;
 	position: relative;
 }
@@ -750,9 +749,12 @@ footer {
 	}
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1025px) {
+	.slide img {
+		object-position: center;
+	}
 	.home {
-		height: 600px;
+		height: 800px;
 	}
 	.header {
 		position: fixed;
@@ -786,7 +788,7 @@ footer {
 		left: 0;
 		position: fixed;
 		width: 100vw;
-		height: calc(80% - 60px);
+		height: calc(500px - 60px);
 		background: var(--main-color);
 		top: -100vh;
 		opacity: 0;
@@ -800,11 +802,14 @@ footer {
 	.navbar	.nav li a {
 		font-size: 1.2rem;
 	}
-	.certif-content .right {
-		padding-bottom: 1rem;
+	.slide-text {
+		width: 80%;
 	}
-	.certif-content .right  p {
-		font-size: .9rem;
+	.slide-text h3 {
+		font-size: 2rem;
+	}
+	.slide-text a {
+		padding: 10px 16px;
 	}
 	.fa-chevron-right {
 		right: 1.5rem;
@@ -818,10 +823,12 @@ footer {
 	}
 	.about .content .right {
 		width: 80vw;
-		height: 50vh;
+		height: 500px;
 		margin-bottom: 2rem;
 	}
 	.about .content .left {
+		order: 1;
+		align-items: center;
 		width: 80vw;
 		height: 500px;
 	}
@@ -831,8 +838,6 @@ footer {
 		object-fit: cover;
 	}
 	.about .content .left {
-		order: 1;
-		align-items: center;
 	}
 	.about .content .left p {
 		padding-right: 0;
@@ -842,7 +847,7 @@ footer {
 		margin-bottom: 1rem;
 	}
 	.numbers {
-		height: 45vh;
+		height: 400px;
 	}
 	.numbers .numbers-wrapper h4,
 	.numbers .numbers-wrapper ul li i {
@@ -854,10 +859,243 @@ footer {
 	.numbers .numbers-wrapper ul li h5 {
 		font-size: 1rem;
 	}
-	/*PROGRAMS*/
+	#programs .content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.programs1 .left {
+		width: 80vw;
+		height: 400px;
+		margin-bottom: 2rem;
+	}
+	.programs1 .left h4 {
+		margin-top: 0;
+	}
+	.programs1 .left p {
+		padding-right: 0;
+		text-align: justify;
+	}
+	.programs1 .right {
+		width: 70vw;
+	}
+	.programs2 .right {
+		width: 80vw;
+		height: 400px;	
+	}
+	.programs2 .right p {
+		text-align: justify;
+	}
+	.programs2 .left {
+		order: 1;
+		width: 70vw;
+	}
+	.certif-content .right {
+		padding: 0 2rem 1rem 2rem;
+	}
+	.certif-content .right p {
+		font-size: .9rem;
+		text-align: justify;
+	}
+	.footer-content {
+		width: 80%;
+	}
+	.footer-content .left, .footer-content .right {
+		padding: 1rem 2rem;
+		margin-top: 1rem;
+	}
+	.footer-content .right {
+		align-items: center;
+	}
 }
 
 
+@media (max-width: 780px) {
+	.about .content .left {
+		width: 90vw;
+		height: 550px;
+	}
+	.about .content .left ul {
+		margin-top: 1rem;
+		margin-left: 3rem;
+	}
+	.about .content .right {
+		width: 90vw;
+	}
+	.programs1 .left,
+	.programs2 .right {
+		padding: 0;
+	}
+	#programs h3 {
+		margin-bottom: 2rem;
+	}
+	.programs1 .right,
+	.programs2 .left {
+		width: 85vw;
+	}
+	.certif-content {
+		flex-direction: column;
+		height: 850px;
+	}
+	.certif-content .right,
+	.certif-content .left {
+		width: 100%;
+		height: 50%;
+	}
+	.certif-content .left {
+		order: 1;
+	}
+	.certif-content .right {
+		padding: 0 5rem 1rem 5rem;
+	}
+	.certif-content .right h4 {
+		font-size: 2.3rem;
+	}
+	.certif-content .right h5 {
+		font-size: 1.7rem;
+	}
+	.certif-content .right p {
+		font-size: 1.1rem;
+	}
+	.contact-info form input[type=text],
+	.contact-info form input[type=email] {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.footer-content h4 {
+		font-size: .8rem;
+	}
+	.footer-content .left h5 {
+		font-size: .65rem;
+	}
+	.footer-content .right .social i {
+		font-size: 2rem;
+	}
+	.footer-end p {
+		font-size: 8px;
+	}
+}
 
+@media (max-width: 630px) {
+	.programs1 .left,
+	.programs2 .right {
+		width: 95vw;
+	}
+	.footer-content .left,
+	.footer-content .right {
+		margin-top: 1.5rem;
+	}
+	.numbers-wrapper {
+	}
+}
+
+@media (max-width: 550px) {
+	.about .content .left {
+		width: 95vw;
+		height: 600px;
+	}
+	.about .content .left h4 {
+		text-align: center;
+	}
+	.about .content .right {
+		width: 95vw;
+	}
+	.numbers {
+		height: 600px;
+	}
+	.numbers-wrapper {
+		padding: 1rem 0;
+	}
+	.numbers-wrapper ul {
+		margin-top: 2rem;
+		margin-bottom: 0;
+		flex-direction: column;
+	}
+	.numbers-wrapper ul li {
+		margin-bottom: 2rem;
+	}
+	.numbers-wrapper h4 {
+		text-align: center;
+	}
+	.programs1 .left {
+		height: 490px;
+	}
+	.programs1 .left h4 {
+		margin-bottom: 1.5rem;
+	}
+	.programs2 .right {
+		height: 475px;
+	}
+	.programs1 .right,
+	.programs2 .left {
+		width: 95vw;
+	}
+	.contact-info form {
+		width: 95vw;
+	}	
+	.certif-content .right {
+		padding: 0 2rem 1rem 2rem;
+	}
+	#enviar {
+		width: 140px;
+	}
+}
+
+@media (max-width: 450px) {
+	.about .content .left {
+		height: 650px;
+	}
+	.about .content .left ul {
+		margin-left: 1rem;
+	}
+	.about .content .left ul li i {
+		margin-right: .5rem;		
+	}
+
+	.slide-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.slide-text h3 {
+		text-align: center;
+	}
+	.fa-chevron-right {
+		right: 1rem;
+	}
+	.fa-chevron-left {
+		left: 1rem;
+	}
+	.about .content .right img {
+		transform: none;
+	}
+	. {
+		font-size: 2.5 !important;
+	}
+	#programs .title {
+		margin-bottom: 3rem;
+	}
+	.programs1 .left {
+		height: 570px;
+	}
+	#certificates .title {
+		font-size: 2.5rem;
+	}
+	.certif-content .right p {
+		font-size: .95rem;
+	}
+	footer {
+		height: 250px;
+	}
+	.footer-content {
+		flex-direction: column;
+	}
+	.footer-content .left, 
+	.footer-content .right {
+		margin-top: 0;
+	}
+	.footer-content .left {
+		text-align: center;
+	}
+}
 
 

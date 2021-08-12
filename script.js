@@ -4,7 +4,6 @@ window.addEventListener("scroll", ()=> {
 	let scrollBtn = document.querySelector(".scroll-btn");
 	header.classList.toggle("sticky", window.scrollY > 0);
 	scrollBtn.classList.toggle("scroll-btn-sticky", window.scrollY > 0)
-
 })
 
 //Slider / Carousel
@@ -58,7 +57,7 @@ setInterval(()=> {
 
 //Mostrar al scrollear
 const show = () => {
-    let sections = document.querySelectorAll('.hidden');
+    let sections = document.querySelectorAll(".hidden");
 
     for (let i = 0; i < sections.length; i++) {
 
@@ -72,7 +71,7 @@ const show = () => {
         }
     }
 }
-window.addEventListener('scroll', show)
+window.addEventListener("scroll", show)
 
 
 //Responsive Menu 
